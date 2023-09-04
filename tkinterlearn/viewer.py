@@ -35,7 +35,6 @@ def forward(image_number):
     button_backward.grid(row=1,column=0)
     
     
-    
 def back(image_number):
     global button_forward
     global button_backward
@@ -53,9 +52,7 @@ def back(image_number):
         button_backward = Button(root,text='<<',command=lambda:back(image_number-1))
     button_forward.grid(row=1,column=2)
     button_backward.grid(row=1,column=0)
-    
-   
-
+ 
 button_quit = Button(root,text="Exit",command=root.quit)
 button_forward = Button(root,text=">>",command=lambda:forward(1))
 button_backward = Button(root, text="<<",state=DISABLED)
@@ -63,12 +60,5 @@ button_backward = Button(root, text="<<",state=DISABLED)
 button_backward.grid(row=1,column=0)
 button_forward.grid(row=1,column=2)
 button_quit.grid(row=1,column=1)
-
-
-
-
-
-
-
 
 root.mainloop()
